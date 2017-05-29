@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="975.20000000000005" y="51.724137931034484"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="VYq-9a-718">
             <objects>
-                <viewController id="KFd-nZ-u1m" sceneMemberID="viewController">
+                <viewController id="KFd-nZ-u1m" customClass="DefinitionViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cXc-11-lz5"/>
                         <viewControllerLayoutGuide type="bottom" id="gbg-Ak-8dy"/>
@@ -58,13 +58,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8a-1Z-Se9">
-                                <rect key="frame" x="73" y="60" width="229" height="252"/>
+                                <rect key="frame" x="73" y="104" width="229" height="252"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="211"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Warthog is a stinky stanky beast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQ9-UH-Ofg">
-                                <rect key="frame" x="46.5" y="382" width="282" height="21"/>
+                                <rect key="frame" x="46.5" y="426" width="282" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -78,6 +78,10 @@
                             <constraint firstItem="mQ9-UH-Ofg" firstAttribute="top" secondItem="Z8a-1Z-Se9" secondAttribute="bottom" constant="70" id="oAG-cw-3Ve"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="definitionLabel" destination="mQ9-UH-Ofg" id="cwr-dc-B1b"/>
+                        <outlet property="emojiLabel" destination="Z8a-1Z-Se9" id="7ew-J0-CCJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MM7-ay-cy9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
