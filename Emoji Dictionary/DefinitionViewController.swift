@@ -35,11 +35,11 @@ class DefinitionViewController: UIViewController {
         }
         
         if emoji == "🍆"{
-            definitionLabel.text = "This looks like Warty's willy when he has /n been tickling me aggressively"
+            definitionLabel.text = "This looks like Warty's willy"
         }
         
         if emoji == "👺"{
-            definitionLabel.text = "This is my angry face when Warty says he'll /n be slave for a week and then won't do it"
+            definitionLabel.text = "This is my angry face"
         }
         
         
